@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Song Filter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Filter Songs</h1>
+  
+  <!-- Filters -->
+  <div class="filters">
+    <label for="genre">Select Genre:</label>
+    <select id="genre">
+      <option value="all">All Genres</option>
+      <option value="rock">Rock</option>
+      <option value="pop">Pop</option>
+    </select>
+
+    <label for="difficulty">Select Difficulty:</label>
+    <select id="difficulty">
+      <option value="all">All Difficulties</option>
+      <option value="easy">Easy</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <button onclick="filterSongs()">Filter</button>
+  </div>
+
+  <!-- Song List -->
+  <div id="song-list">
+    <div class="song" data-genre="rock" data-difficulty="easy">
+      <h2><a href="song1.html">Chanson 1</a></h2>
+      <p>Genre: Rock, Difficulty: Easy</p>
+    </div>
+    <div class="song" data-genre="pop" data-difficulty="hard">
+      <h2><a href="song2.html">Chanson 2</a></h2>
+      <p>Genre: Pop, Difficulty: Hard</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
