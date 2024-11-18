@@ -1,7 +1,7 @@
 /* General Body Styling */
 body {
   font-family: 'Courier New', Courier, monospace; /* Monospace font for a coding vibe */
-  background-color: #1a1a1a; /* Dark background for contrast */
+  background-color: #1e1e1e; /* Dark background */
   color: #f4f4f9; /* Light text for readability */
   margin: 0;
   padding: 0;
@@ -11,8 +11,7 @@ body {
   justify-content: flex-start;
   height: 100%;
   text-align: center;
-  padding-bottom: 100px; /* Ensure space for the fixed footer button */
-  background: linear-gradient(135deg, #1f1f1f, #3b3b3b); /* Subtle gradient background */
+  padding-bottom: 80px; /* Ensure space for the fixed footer button */
 }
 
 /* Header Styling */
@@ -22,16 +21,14 @@ header {
   padding: 20px;
   width: 100%;
   text-align: center;
-  box-sizing: border-box;
-  position: relative;
-  z-index: 2; /* Keep header above other elements */
+  box-sizing: border-box; /* Ensure padding is included in element's total width/height */
 }
 
 header h1 {
   font-size: 48px;
   margin: 0;
-  color: #00ff99; /* Neon green */
-  text-shadow: 0px 0px 15px rgba(0, 255, 153, 0.7), 0px 0px 30px rgba(0, 255, 153, 0.9); /* Glowing neon effect */
+  color: #ff6347; /* Tomato red */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Soft shadow for text */
 }
 
 header p {
@@ -39,7 +36,6 @@ header p {
   color: #9e9e9e;
   margin: 10px 0 0 0;
   font-style: italic;
-  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
 }
 
 /* Filter Styling */
@@ -47,19 +43,17 @@ header p {
   width: 80%;
   max-width: 900px;
   margin-top: 40px;
-  background-color: #2c3e50;
+  background-color: #34495e;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7); /* Glowing neon border */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Glowing effect */
   box-sizing: border-box;
-  margin-bottom: 50px; /* Keep space for footer */
 }
 
 .filter-container h2 {
   font-size: 28px;
-  color: #ff6347; /* Neon Red for headings */
+  color: #ff6347; /* Tomato red */
   margin-bottom: 15px;
-  text-shadow: 0 0 10px rgba(255, 99, 71, 0.8), 0 0 15px rgba(255, 99, 71, 0.6);
 }
 
 .filter-group {
@@ -78,128 +72,85 @@ header p {
   font-size: 18px;
   color: #f4f4f9;
   margin-bottom: 10px;
-  cursor: pointer;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Subtle glow for labels */
 }
 
 .filter-group input[type="checkbox"] {
   margin-right: 10px;
-  accent-color: #00ff99; /* Neon green checkbox accent */
-  transition: transform 0.2s ease-in-out; /* Smooth animation for checkbox hover */
-}
-
-.filter-group input[type="checkbox"]:hover {
-  transform: scale(1.1);
+  accent-color: #ff6347; /* Tomato red accent color */
 }
 
 #apply-filters {
-  background-color: #00ccff; /* Neon Blue */
+  background-color: #00ccff;
   color: white;
   font-size: 18px;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff; /* Glowing neon effect */
   transition: 0.3s ease-in-out;
   margin-top: 20px;
 }
 
 #apply-filters:hover {
   background-color: #00ffcc;
-  box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+  box-shadow: 0 0 20px #00ffcc;
 }
 
 /* Song Container Styling (Main Page) */
 .song-container {
   width: 80%;
   max-width: 900px;
-  margin-top: 40px;
+  margin-top: 40px; /* Space from the header */
   padding: 20px;
-  background-color: #34495e;
+  background-color: #2c3e50; /* Dark background */
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Glowing neon effect */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Glowing effect */
   text-align: left;
   box-sizing: border-box;
-  margin-bottom: 80px;
+  margin-bottom: 80px; /* Ensures no content gets hidden by the footer */
 }
 
-.song-container h2 {
-  font-size: 28px;
-  color: #ff6347; /* Neon Red */
-  margin-top: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow: 0 0 10px rgba(255, 99, 71, 0.8);
+/* Remove list bullets */
+.song-container ul {
+  list-style-type: none;  /* Remove bullets from the list */
+  padding-left: 0;        /* Remove default left padding */
+  margin: 0;              /* Remove any default margin */
 }
 
-.song-container p {
-  font-size: 18px;
-  color: #f4f4f9;
-  line-height: 1.6;
-  white-space: pre-wrap;
-  margin-top: 10px;
-}
-
-.song-container pre {
-  font-size: 22px;
-  color: #f39c12; /* Neon Gold for the chords */
-  text-align: center;
-  white-space: pre-wrap;
-  letter-spacing: 2px;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle glow for chords */
+/* Optional: style the individual list items */
+.song-container li {
+  margin-bottom: 10px; /* Optional: adds space between the song items */
 }
 
 /* Footer Section - Fixed Button Styling */
 footer {
-  position: fixed;
-  bottom: 0;
+  position: fixed; /* Fix the button at the bottom */
+  bottom: 0; /* Keep it at the bottom of the screen */
   left: 50%;
-  transform: translateX(-50%);
-  background-color: #2c3e50;
-  padding: 15px 0;
+  transform: translateX(-50%); /* Center the button horizontally */
+  background-color: #2c3e50; /* Dark gray background for the footer */
+  padding: 10px 0;
   width: 100%;
   text-align: center;
-  z-index: 10;
+  z-index: 10; /* Ensure the button is above other content */
 }
 
 footer button {
-  background-color: #ff6347; /* Neon Red */
+  background-color: #00ccff; /* Electric blue */
   color: white;
   font-size: 18px;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347;
+  box-shadow: 0 0 10px #00ccff;
   margin-bottom: 10px;
   transition: 0.3s ease-in-out;
 }
 
 footer button:hover {
-  background-color: #ff4500; /* Neon Orange */
-  box-shadow: 0 0 30px #ff4500, 0 0 40px #ff4500;
-}
-/* Song Links Styling */
-.song-container a {
-  display: block; /* Make each link a block element for better readability */
-  font-size: 24px; /* Larger font size */
-  color: #ffffff; /* White text color */
-  text-decoration: none; /* Remove underline */
-  background-color: #ff6347; /* Tomato red background */
-  padding: 12px 20px; /* Padding around the text */
-  border-radius: 8px; /* Rounded corners */
-  margin-bottom: 15px; /* Space between links */
-  box-shadow: 0 0 10px rgba(255, 99, 71, 0.7); /* Glowing effect around the link */
-  transition: 0.3s ease-in-out; /* Smooth transition on hover */
-}
-
-/* Hover Effect for Song Links */
-.song-container a:hover {
-  background-color: #00ccff; /* Electric blue on hover */
-  color: #2c3e50; /* Dark text color on hover */
-  box-shadow: 0 0 20px rgba(0, 255, 255, 1); /* Stronger glowing effect */
-  transform: scale(1.05); /* Slight scale-up effect */
+  background-color: #00ffcc;
+  box-shadow: 0 0 20px #00ffcc;
 }
 
 /* Responsive Design */
@@ -224,7 +175,7 @@ footer button:hover {
   .song-container {
     width: 90%;
     padding: 15px;
-    margin-top: 60px;
+    margin-top: 60px; /* More space from header on small screens */
   }
 
   .song-container h2 {
