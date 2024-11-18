@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters select, .filters button {
+  margin-right: 10px;
+}
+
+#song-list .song {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#song-list .song h2 {
+  margin: 0;
+}
+
+#song-list .song p {
+  margin: 5px 0;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
