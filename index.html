@@ -10,7 +10,7 @@
 
   <header>
     <h1>Song List</h1>
-    <p>Select songs based on genre and difficulty</p>
+    <p>Select songs based on genre, difficulty, decade, and favourites</p>
   </header>
 
   <!-- Filter Section -->
@@ -29,6 +29,24 @@
       <!-- Add more difficulties here if needed -->
     </div>
 
+    <div class="filter-group">
+      <h3>Decades</h3>
+      <label for="1940s"><input type="checkbox" id="1940s" name="decade" value="1940s"> 1940s</label>
+      <label for="1950s"><input type="checkbox" id="1950s" name="decade" value="1950s"> 1950s</label>
+      <label for="1960s"><input type="checkbox" id="1960s" name="decade" value="1960s"> 1960s</label>
+      <label for="1970s"><input type="checkbox" id="1970s" name="decade" value="1970s"> 1970s</label>
+      <label for="1980s"><input type="checkbox" id="1980s" name="decade" value="1980s"> 1980s</label>
+      <label for="1990s"><input type="checkbox" id="1990s" name="decade" value="1990s"> 1990s</label>
+      <label for="2000s"><input type="checkbox" id="2000s" name="decade" value="2000s"> 2000s</label>
+      <label for="2010s"><input type="checkbox" id="2010s" name="decade" value="2010s"> 2010s</label>
+      <label for="2020s"><input type="checkbox" id="2020s" name="decade" value="2020s"> 2020s</label>
+    </div>
+
+    <div class="filter-group">
+      <h3>Favourites</h3>
+      <label for="favourites"><input type="checkbox" id="favourites" name="favourites" value="true"> Show Favourites</label>
+    </div>
+
     <button id="apply-filters">Apply Filters</button>
   </section>
 
@@ -36,9 +54,9 @@
   <section class="song-list-container">
     <h2>Available Songs</h2>
     <ul class="song-list">
-      <li><a href="song-page.html" data-genres="rock, pop" data-difficulties="easy">Chanson 1</a></li>
-      <li><a href="song-page.html" data-genres="rock" data-difficulties="hard">Chanson 2</a></li>
-      <!-- Add more songs with multiple genres and difficulties -->
+      <li><a href="song-page.html" data-genres="rock, pop" data-difficulties="easy" data-decades="1960s" data-favourites="true">Chanson 1</a></li>
+      <li><a href="song-page.html" data-genres="rock" data-difficulties="hard" data-decades="1980s" data-favourites="false">Chanson 2</a></li>
+      <!-- Add more songs with multiple genres, difficulties, decades, and favourite tags -->
     </ul>
   </section>
 
@@ -50,4 +68,3 @@
   <script src="script.js"></script> <!-- Link to external JS -->
 </body>
 </html>
-
