@@ -38,6 +38,64 @@ header p {
   font-style: italic;
 }
 
+/* Filter Styling */
+.filter-container {
+  width: 80%;
+  max-width: 900px;
+  margin-top: 40px;
+  background-color: #34495e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Glowing effect */
+  box-sizing: border-box;
+}
+
+.filter-container h2 {
+  font-size: 28px;
+  color: #ff6347; /* Tomato red */
+  margin-bottom: 15px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.filter-group h3 {
+  font-size: 20px;
+  color: #f4f4f9;
+  margin-bottom: 10px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 18px;
+  color: #f4f4f9;
+  margin-bottom: 10px;
+}
+
+.filter-group input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #ff6347; /* Tomato red accent color */
+}
+
+#apply-filters {
+  background-color: #00ccff;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+#apply-filters:hover {
+  background-color: #00ffcc;
+  box-shadow: 0 0 20px #00ffcc;
+}
+
 /* Song Container Styling (Main Page) */
 .song-container {
   width: 80%;
@@ -50,45 +108,6 @@ header p {
   text-align: left;
   box-sizing: border-box;
   margin-bottom: 80px; /* Ensures no content gets hidden by the footer */
-}
-
-/* Chords and Lyrics Styling */
-.chords-lyrics {
-  font-size: 20px;
-  color: #f4f4f9;
-  line-height: 1.6;
-  white-space: pre-wrap;
-  text-align: center;
-  font-family: 'Courier New', monospace; /* Monospace for chord styling */
-  margin-top: 10px;
-}
-
-.chords-lyrics pre {
-  margin: 0;
-  font-size: 22px;
-  color: #f39c12; /* Golden color for the chords */
-}
-
-/* Filter Styling (if needed for main page) */
-.filter-container {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.filter-container select {
-  font-size: 18px;
-  padding: 10px;
-  margin: 10px 15px;
-  background-color: #34495e;
-  color: #ecf0f1;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.filter-container select:hover {
-  background-color: #16a085;
 }
 
 /* Footer Section - Fixed Button Styling */
@@ -136,6 +155,11 @@ footer button:hover {
     font-size: 18px;
   }
 
+  .filter-container {
+    width: 90%;
+    padding: 15px;
+  }
+
   .song-container {
     width: 90%;
     padding: 15px;
@@ -144,10 +168,6 @@ footer button:hover {
 
   .song-container h2 {
     font-size: 24px;
-  }
-
-  .chords-lyrics {
-    font-size: 18px;
   }
 
   footer button {
