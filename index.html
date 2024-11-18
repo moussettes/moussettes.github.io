@@ -15,19 +15,19 @@
 
   <!-- Filter Section -->
   <section class="filter-container">
-    <label for="genre-select">Genre:</label>
-    <select id="genre-select" name="genre">
-      <option value="all">All Genres</option>
-      <option value="rock">Rock</option>
-      <option value="pop">Pop</option>
-    </select>
+    <div class="filter-group">
+      <h3>Genres</h3>
+      <label for="rock"><input type="checkbox" id="rock" name="genre" value="rock"> Rock</label>
+      <label for="pop"><input type="checkbox" id="pop" name="genre" value="pop"> Pop</label>
+      <!-- Add more genres here if needed -->
+    </div>
 
-    <label for="difficulty-select">Difficulty:</label>
-    <select id="difficulty-select" name="difficulty">
-      <option value="all">All Difficulties</option>
-      <option value="easy">Easy</option>
-      <option value="hard">Hard</option>
-    </select>
+    <div class="filter-group">
+      <h3>Difficulty</h3>
+      <label for="easy"><input type="checkbox" id="easy" name="difficulty" value="easy"> Easy</label>
+      <label for="hard"><input type="checkbox" id="hard" name="difficulty" value="hard"> Hard</label>
+      <!-- Add more difficulties here if needed -->
+    </div>
 
     <button id="apply-filters">Apply Filters</button>
   </section>
@@ -36,8 +36,9 @@
   <section class="song-list-container">
     <h2>Available Songs</h2>
     <ul class="song-list">
-      <li><a href="song-page.html">Chanson 1</a></li>
-      <li><a href="song-page.html">Chanson 2</a></li>
+      <li><a href="song-page.html" data-genres="rock, pop" data-difficulties="easy">Chanson 1</a></li>
+      <li><a href="song-page.html" data-genres="rock" data-difficulties="hard">Chanson 2</a></li>
+      <!-- Add more songs with multiple genres and difficulties -->
     </ul>
   </section>
 
