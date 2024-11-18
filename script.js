@@ -47,3 +47,30 @@ document.querySelectorAll('.genre, .difficulty').forEach(checkbox => {
 
 // Initialize on page load
 window.onload = filterSongs;
+
+// Function to add a song to the ordered list
+function addSong() {
+  // Get the value from the input field
+  const songName = document.getElementById("song-name-input").value;
+
+  // Check if the input is not empty
+  if (songName.trim() !== "") {
+    // Create a new list item
+    const li = document.createElement("li");
+    li.textContent = songName;
+
+    // Get the ordered list container
+    const songList = document.getElementById("song-list");
+
+    // Append the new song to the list
+    songList.appendChild(li);
+
+    // Clear the input field after adding the song
+    document.getElementById("song-name-input").value = "";
+  } else {
+    // Alert the user if the input is empty
+    alert("Please enter a song name.");
+  }
+}
+
+
