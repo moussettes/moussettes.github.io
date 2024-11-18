@@ -4,45 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Song Filter</title>
+  <!-- Link to external CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1>Song Filter</h1>
+    <h1><i class="fas fa-music"></i> Song Filter</h1>
     <p>Choose a song based on genre and difficulty</p>
   </header>
 
   <section class="filters">
-    <h2>Filter Songs</h2>
+    <h2><i class="fas fa-filter"></i> Filter Songs</h2>
 
     <!-- Genre Filter (Checkboxes for Multiple Selection) -->
     <div class="filter-group">
-      <label><input type="checkbox" class="genre" value="rock"> Rock</label>
-      <label><input type="checkbox" class="genre" value="pop"> Pop</label>
+      <label><input type="checkbox" class="genre" value="rock"> <i class="fas fa-guitar"></i> Rock</label>
+      <label><input type="checkbox" class="genre" value="pop"> <i class="fas fa-music"></i> Pop</label>
     </div>
 
     <!-- Difficulty Filter (Checkboxes for Multiple Selection) -->
     <div class="filter-group">
-      <label><input type="checkbox" class="difficulty" value="easy"> Easy</label>
-      <label><input type="checkbox" class="difficulty" value="hard"> Hard</label>
+      <label><input type="checkbox" class="difficulty" value="easy"> <i class="fas fa-play-circle"></i> Easy</label>
+      <label><input type="checkbox" class="difficulty" value="hard"> <i class="fas fa-cogs"></i> Hard</label>
     </div>
 
     <!-- Clear Filters Button -->
-    <button onclick="clearFilters()">Clear Filters</button>
+    <button onclick="clearFilters()"><i class="fas fa-trash-alt"></i> Clear Filters</button>
   </section>
 
-  <section id="song-list">
+  <!-- Song Name Input Section -->
+  <section class="add-song">
+    <h2><i class="fas fa-plus-circle"></i> Add a Song</h2>
+    <input type="text" id="song-name-input" placeholder="Enter song name" />
+    <button onclick="addSong()">Add Song</button>
+
+    <!-- Ordered list of songs -->
+    <ol id="song-list"></ol>
+  </section>
+
+  <section id="song-list-container">
     <!-- Song 1 -->
     <div class="song" data-genre="rock" data-difficulty="easy">
-      <h2><a href="song1.html">Chanson 1</a></h2>
-      <p>Genre: Rock, Difficulty: Easy</p>
+      <h2><a href="song1.html"><i class="fas fa-headphones-alt"></i> Chanson 1</a></h2>
+      <p><i class="fas fa-guitar"></i> Genre: Rock, <i class="fas fa-play-circle"></i> Difficulty: Easy</p>
     </div>
 
     <!-- Song 2 -->
     <div class="song" data-genre="pop" data-difficulty="hard">
-      <h2><a href="song2.html">Chanson 2</a></h2>
-      <p>Genre: Pop, Difficulty: Hard</p>
+      <h2><a href="song2.html"><i class="fas fa-headphones-alt"></i> Chanson 2</a></h2>
+      <p><i class="fas fa-music"></i> Genre: Pop, <i class="fas fa-cogs"></i> Difficulty: Hard</p>
     </div>
   </section>
 
@@ -50,7 +61,9 @@
     <p>© 2024 Song Filter - All Rights Reserved</p>
   </footer>
 
+  <!-- Link to external JS -->
   <script src="script.js"></script>
 </body>
 </html>
+
 
