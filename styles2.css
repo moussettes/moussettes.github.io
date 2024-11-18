@@ -33,7 +33,7 @@ header p {
 }
 
 /* Lyrics and Chords Section */
-.lyrics-chords-container {
+/*.lyrics-chords-container {
   width: 80%;
   max-width: 800px;
   margin-top: 30px;
@@ -41,13 +41,13 @@ header p {
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 0 10px #00ffff; /* Glowing effect */
-}
+/*}
 
 .lyrics-chords-container h2 {
   font-size: 36px;
   margin: 0;
   color: #ffcc00; /* Neon gold glow */
-  text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
+ /* text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
   margin-bottom: 20px;
 }
 
