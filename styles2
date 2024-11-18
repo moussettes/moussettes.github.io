@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+header p {
+  font-size: 18px;
+  color: #666;
+}
+
+.chords-lyrics {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.chords, .lyrics {
+  width: 48%;
+}
+
+.chords ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.chords li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.lyrics {
+  font-size: 18px;
+}
+
+pre {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  line-height: 1.8;
+  white-space: pre-wrap; /* Make sure long lines wrap */
+  word-wrap: break-word; /* Break long words */
+  color: #333;
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+}
