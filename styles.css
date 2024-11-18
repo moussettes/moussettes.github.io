@@ -14,14 +14,26 @@ body {
   padding-bottom: 80px; /* Ensure space for the fixed footer button */
 }
 
-/* Header Styling */
+/* ASCII Art Styling */
+.ascii-art {
+  position: fixed; /* Keep it fixed on the left */
+  top: 50%; /* Center vertically */
+  left: 0; /* Position it on the left side of the screen */
+  transform: translateY(-50%); /* Adjust for exact center alignment */
+  font-size: 32px;
+  color: #ff6347; /* Tomato red color */
+  white-space: pre-line; /* Preserve line breaks */
+  padding-left: 20px;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
 header {
   background-color: #2c3e50; /* Dark gray background */
   color: #f4f4f9;
   padding: 20px;
   width: 100%;
   text-align: center;
-  box-sizing: border-box; /* Ensure padding is included in element's total width/height */
+  box-sizing: border-box;
 }
 
 header h1 {
@@ -187,7 +199,6 @@ footer button:hover {
     padding: 8px 16px;
   }
 }
-
 
 
 
