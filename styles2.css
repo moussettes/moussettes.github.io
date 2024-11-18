@@ -56,6 +56,7 @@ header p {
   letter-spacing: 1px;
 }
 
+/* Chords and Lyrics Styling */
 .chords-lyrics {
   font-size: 20px;
   color: #f4f4f9;
@@ -64,14 +65,10 @@ header p {
   text-align: center;
   font-family: 'Courier New', monospace; /* Monospace for chord styling */
   margin-top: 10px;
-  padding: 15px;
-  background-color: #34495e; /* Slightly lighter dark gray for chords/lyrics area */
-  border-radius: 10px;
 }
 
 .chords-lyrics pre {
   margin: 0;
-  padding: 10px;
   font-size: 22px;
   color: #f39c12; /* Golden color for the chords */
 }
@@ -140,4 +137,3 @@ footer button:hover {
     padding: 8px 16px;
   }
 }
-
