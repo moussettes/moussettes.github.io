@@ -3,83 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Song List</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+  <title>Music Filter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Soirées boonies sur St-Denis</h1>
-    <p>C'est quoi ta toune?</p>
-  </header>
+<header>
+  <h1>Music Song List</h1>
+  <p>Find your favorite songs by genre, difficulty, decades, and favorites.</p>
+</header>
 
-  <!-- Filter Section -->
-  <section class="filter-container">
-    <div class="filters">
-      <div class="filter-group">
-        <label for="genre">Genres:</label>
-        <select id="genre" name="genre">
-          <option value="">All Genres</option>
-          <option value="rock">Rock</option>
-          <option value="pop">Pop</option>
-          <!-- Add more genres here if needed -->
-        </select>
-      </div>
+<div class="filter-container">
+  <h2>Filter Songs</h2>
 
-      <div class="filter-group">
-        <label for="difficulty">Difficulty:</label>
-        <select id="difficulty" name="difficulty">
-          <option value="">All Difficulty Levels</option>
-          <option value="easy">Easy</option>
-          <option value="hard">Hard</option>
-          <!-- Add more difficulties here if needed -->
-        </select>
-      </div>
+  <div class="filter-group">
+    <h3>Genres</h3>
+    <label>
+      <input type="checkbox" name="genre" value="rock"> Rock
+    </label>
+    <label>
+      <input type="checkbox" name="genre" value="pop"> Pop
+    </label>
+  </div>
 
-      <div class="filter-group">
-        <label for="decade">Decade:</label>
-        <select id="decade" name="decade">
-          <option value="">All Decades</option>
-          <option value="1940s">1940s</option>
-          <option value="1950s">1950s</option>
-          <option value="1960s">1960s</option>
-          <option value="1970s">1970s</option>
-          <option value="1980s">1980s</option>
-          <option value="1990s">1990s</option>
-          <option value="2000s">2000s</option>
-          <option value="2010s">2010s</option>
-          <option value="2020s">2020s</option>
-        </select>
-      </div>
+  <div class="filter-group">
+    <h3>Difficulty</h3>
+    <label>
+      <input type="checkbox" name="difficulty" value="easy"> Easy
+    </label>
+    <label>
+      <input type="checkbox" name="difficulty" value="hard"> Hard
+    </label>
+  </div>
 
-      <div class="filter-group">
-        <label for="favourites">Favourites:</label>
-        <select id="favourites" name="favourites">
-          <option value="">All Songs</option>
-          <option value="true">Show Favourites</option>
-          <option value="false">Hide Favourites</option>
-        </select>
-      </div>
+  <div class="filter-group">
+    <h3>Decades</h3>
+    <label>
+      <input type="checkbox" name="decade" value="1940s"> 1940s
+    </label>
+    <label>
+      <input type="checkbox" name="decade" value="1950s"> 1950s
+    </label>
+    <label>
+      <input type="checkbox" name="decade" value="1960s"> 1960s
+    </label>
+    <label>
+      <input type="checkbox" name="decade" value="1970s"> 1970s
+    </label>
+    <label>
+      <input type="checkbox" name="decade" value="1980s"> 1980s
+    </label>
+    <label>
+      <input type="checkbox" name="decade" value="1990s"> 1990s
+    </label>
+    <label>
+      <input type="checkbox" name="decade" value="2000s"> 2000s
+    </label>
+    <label>
+      <input type="checkbox" name="decade" value="2010s"> 2010s
+    </label>
+    <label>
+      <input type="checkbox" name="decade" value="2020s"> 2020s
+    </label>
+  </div>
 
-      <button id="apply-filters">Apply Filters</button>
-    </div>
-  </section>
+  <div class="filter-group">
+    <h3>Favorites</h3>
+    <label>
+      <input type="checkbox" name="favorites" value="true"> Show Favorites Only
+    </label>
+  </div>
+  
+  <button id="apply-filters">Apply Filters</button>
+</div>
 
-  <!-- Song List Section -->
-  <section class="song-list-container">
-    <h2>Available Songs</h2>
-    <ul class="song-list">
-      <li><a href="song1.html" data-genres="rock, pop" data-difficulties="easy" data-decades="1960s" data-favourites="true">Chanson 1</a></li>
-      <li><a href="song2.html" data-genres="rock" data-difficulties="hard" data-decades="1980s" data-favourites="false">Chanson 2</a></li>
-      <!-- Add more songs with multiple genres, difficulties, decades, and favourite tags -->
-    </ul>
-  </section>
+<div class="song-container" id="song-list">
+  <!-- Songs will appear here -->
+</div>
 
-  <footer>
-    <p>© 2024 Moussettes | Dernière mise à jour le 18 novembre 2024</p>
-  </footer>
+<footer>
+  <p>© 2024 Guitar Lyrics | All Rights Reserved</p>
+</footer>
 
-  <script src="script.js"></script> <!-- Link to external JS -->
+<script src="script.js"></script>
 </body>
 </html>
 
