@@ -1,13 +1,12 @@
-// Function to handle filtering of songs based on selected genres, difficulties, decades, and favourites
 document.getElementById('apply-filters').addEventListener('click', function() {
   // Get selected genres, difficulties, decades, and favourites
   const selectedGenres = Array.from(document.querySelectorAll('input[name="genre"]:checked')).map(checkbox => checkbox.value);
   const selectedDifficulties = Array.from(document.querySelectorAll('input[name="difficulty"]:checked')).map(checkbox => checkbox.value);
   const selectedDecades = Array.from(document.querySelectorAll('input[name="decade"]:checked')).map(checkbox => checkbox.value);
-  const showFavourites = document.getElementById('favourites').checked;
+  const showFavourites = document.querySelector('input[name="favorites"]:checked') !== null;
 
   // Get all song links
-  const songLinks = document.querySelectorAll('.song-list li a');
+  const songLinks = document.querySelectorAll('.song-container a');
 
   // Loop through each song
   songLinks.forEach(song => {
@@ -24,10 +23,11 @@ document.getElementById('apply-filters').addEventListener('click', function() {
 
     // Show or hide the song based on the match
     if (matchesGenre && matchesDifficulty && matchesDecade && matchesFavourites) {
-      song.parentElement.style.display = 'list-item';
+      song.parentElement.style.display = 'block';
     } else {
       song.parentElement.style.display = 'none';
     }
   });
 });
+
 
