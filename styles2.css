@@ -33,10 +33,12 @@ header p {
   width: 90%;
   max-width: 800px; /* Limit the width to make sure it's readable on large screens */
   text-align: center;
+  margin-top: 20px; /* Add some space above the section */
 }
 
 .chords, .lyrics {
   margin-bottom: 40px; /* Space between chords and lyrics sections */
+  padding: 0 20px; /* Add some padding inside the sections */
 }
 
 .chords h2, .lyrics h2 {
