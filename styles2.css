@@ -1,98 +1,176 @@
 /* General body styling */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: #f4f4f9;
-  color: #333;
+  font-family: 'Courier New', Courier, monospace; /* Monospace for a coding vibe */
+  background-color: #1e1e1e; /* Dark background (coding style) */
+  color: #f4f4f9; /* Light text for readability */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
+  text-align: center;
+  animation: fadeIn 2s ease-out; /* Fade-in effect on page load */
 }
 
-/* Header section */
+/* Header Section */
 header {
-  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  animation: typing 3s steps(30) 1s 1 normal both; /* Typewriter effect */
 }
 
 header h1 {
-  font-size: 48px; /* Larger font size for TV screens */
-  color: #333;
+  font-size: 48px;
+  color: #f0f0f0;
+  letter-spacing: 3px;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff; /* Neon glow effect */
 }
 
 header p {
-  font-size: 24px; /* Larger font size for readability */
-  color: #666;
+  font-size: 24px;
+  color: #9e9e9e;
+  text-shadow: 0 0 3px #00ffcc, 0 0 5px #00ffcc; /* Soft neon green */
 }
 
-/* Chords and Lyrics section */
-.chords-lyrics {
-  width: 90%;
-  max-width: 800px; /* Limit the width to make sure it's readable on large screens */
-  text-align: center;
-  margin-top: 20px; /* Add some space above the section */
+/* Lyrics and Chords Section */
+.lyrics-chords-container {
+  width: 80%;
+  max-width: 800px;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #00ffff; /* Glowing effect */
 }
 
-.chords, .lyrics {
-  margin-bottom: 40px; /* Space between chords and lyrics sections */
-  padding: 0 20px; /* Add some padding inside the sections */
-}
-
-.chords h2, .lyrics h2 {
+.lyrics-chords-container h2 {
   font-size: 36px;
+  margin: 0;
+  color: #ffcc00; /* Neon gold glow */
+  text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
   margin-bottom: 20px;
-  color: #333;
 }
 
-.chords ul {
-  list-style-type: none;
-  padding-left: 0;
-  font-size: 24px; /* Larger font size for better readability */
+/* Chord Section */
+.chords {
+  font-size: 28px;
+  color: #ff00ff; /* Neon pink for chords */
+  background-color: #282828; /* Dark background for chords */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #ff00ff; /* Neon glow */
 }
 
-.chords li {
+.chords span {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 10px;
+  font-size: 32px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ff00ff;
+}
+
+/* Lyrics Section */
+.lyrics {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #f4f4f9;
+  text-align: left;
+  background-color: #282828;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffcc; /* Soft neon green glow */
+  white-space: pre-line; /* Preserve line breaks in lyrics */
+}
+
+.lyrics p {
   margin: 10px 0;
-  line-height: 1.8;
-  color: #333;
 }
 
-.lyrics pre {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 28px; /* Larger font size for lyrics */
-  line-height: 1.8;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  margin-top: 0;
-  color: #333;
-}
-
-/* Footer styling */
-footer {
-  text-align: center;
+/* Song Actions */
+.actions {
   margin-top: 40px;
+}
+
+.actions button {
+  padding: 15px 30px;
+  font-size: 22px;
+  background-color: #00ccff; /* Electric blue button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ccff;
+  transition: 0.3s ease-in-out;
+}
+
+.actions button:hover {
+  background-color: #00ffcc;
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
   font-size: 20px;
   color: #666;
 }
 
-/* Responsive design */
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Media Queries for responsiveness */
 @media (max-width: 1200px) {
-  /* Adjust text sizes slightly for smaller screens (e.g., on mobile or smaller devices) */
   header h1 {
     font-size: 36px;
   }
 
   header p {
-    font-size: 18px;
+    font-size: 20px;
   }
 
-  .chords h2, .lyrics h2 {
-    font-size: 30px;
+  .lyrics-chords-container h2 {
+    font-size: 28px;
   }
 
-  .chords li, .lyrics pre {
+  .chords {
+    font-size: 24px;
+  }
+
+  .lyrics {
+    font-size: 20px;
+  }
+
+  .actions button {
     font-size: 20px;
   }
 }
