@@ -1,138 +1,158 @@
-/* Reset some basic styles for consistency */
-* {
+/* General Body Styling */
+body {
+  font-family: 'Courier New', Courier, monospace; /* Monospace font for a coding vibe */
+  background-color: #1e1e1e; /* Dark background */
+  color: #f4f4f9; /* Light text for readability */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/* Centering the entire page content */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  min-height: 100vh;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 80px; /* Ensure space for the fixed footer button */
 }
 
-/* Styling the header */
+/* Header Styling */
 header {
-  text-align: center;
-  margin: 20px 0;
-}
-
-h1 {
-  font-size: 32px;
-}
-
-p {
-  font-size: 18px;
-}
-
-/* Filter container styling */
-.filter-container {
-  width: 100%;
-  max-width: 1200px;
+  background-color: #2c3e50; /* Dark gray background */
+  color: #f4f4f9;
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-/* Filters row */
-.filters {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Filter group styling */
-.filter-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.filter-group label {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.filter-group select {
-  padding: 8px;
-  font-size: 16px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  width: 150px;
-}
-
-#apply-filters {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#apply-filters:hover {
-  background-color: #0056b3;
-}
-
-/* Song list container styling */
-.song-list-container {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.song-list {
-  list-style-type: none;
-}
-
-.song-list li {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.song-list li a {
-  text-decoration: none;
-  color: #333;
-}
-
-.song-list li a:hover {
-  color: #007bff;
-}
-
-/* Footer styling */
-footer {
   text-align: center;
-  margin-top: 40px;
+  box-sizing: border-box; /* Ensure padding is included in element's total width/height */
+}
+
+header h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #ff6347; /* Tomato red */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Soft shadow for text */
+}
+
+header p {
+  font-size: 20px;
+  color: #9e9e9e;
+  margin: 10px 0 0 0;
+  font-style: italic;
+}
+
+/* Song Container Styling (Main Page) */
+.song-container {
+  width: 80%;
+  max-width: 900px;
+  margin-top: 40px; /* Space from the header */
+  padding: 20px;
+  background-color: #2c3e50; /* Dark background */
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Glowing effect */
+  text-align: left;
+  box-sizing: border-box;
+  margin-bottom: 80px; /* Ensures no content gets hidden by the footer */
+}
+
+/* Chords and Lyrics Styling */
+.chords-lyrics {
+  font-size: 20px;
+  color: #f4f4f9;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  text-align: center;
+  font-family: 'Courier New', monospace; /* Monospace for chord styling */
+  margin-top: 10px;
+}
+
+.chords-lyrics pre {
+  margin: 0;
+  font-size: 22px;
+  color: #f39c12; /* Golden color for the chords */
+}
+
+/* Filter Styling (if needed for main page) */
+.filter-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.filter-container select {
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px 15px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.filter-container select:hover {
+  background-color: #16a085;
+}
+
+/* Footer Section - Fixed Button Styling */
+footer {
+  position: fixed; /* Fix the button at the bottom */
+  bottom: 0; /* Keep it at the bottom of the screen */
+  left: 50%;
+  transform: translateX(-50%); /* Center the button horizontally */
+  background-color: #2c3e50; /* Dark gray background for the footer */
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10; /* Ensure the button is above other content */
+}
+
+footer button {
+  background-color: #00ccff; /* Electric blue */
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ccff;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+footer button:hover {
+  background-color: #00ffcc;
+  box-shadow: 0 0 20px #00ffcc;
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
-  /* Adjust filter layout for small screens */
-  .filters {
-    flex-direction: column;
-    align-items: stretch;
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
   }
 
-  .filter-group {
-    margin-bottom: 20px;
-    align-items: stretch;
+  header h1 {
+    font-size: 36px;
   }
 
-  .filter-group select {
-    width: 100%;
+  header p {
+    font-size: 18px;
   }
 
-  #apply-filters {
-    width: 100%;
+  .song-container {
+    width: 90%;
+    padding: 15px;
+    margin-top: 60px; /* More space from header on small screens */
+  }
+
+  .song-container h2 {
+    font-size: 24px;
+  }
+
+  .chords-lyrics {
+    font-size: 18px;
+  }
+
+  footer button {
+    font-size: 16px;
+    padding: 8px 16px;
   }
 }
 
