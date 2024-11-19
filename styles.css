@@ -148,8 +148,55 @@ footer {
 }
 
 footer button {
-  background-color: #00ccff; /*
+  background-color: #00ccff; /* Electric blue */
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ccff;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
 
+footer button:hover {
+  background-color: #00ffcc;
+  box-shadow: 0 0 20px #00ffcc;
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
 
+  header h1 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  .filter-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .song-container {
+    width: 90%;
+    padding: 15px;
+    margin-top: 60px; /* More space from header on small screens */
+  }
+
+  .song-container h2 {
+    font-size: 24px;
+  }
+
+  footer button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
 
