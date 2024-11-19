@@ -13,90 +13,63 @@
   <p>Soirées musicales pour les fans de bière habitant la rue St-Denis</p>
 </header>
 
-<!-- ASCII art in the left margin -->
+<!-- ASCII Art -->
 <div class="ascii-art">
   ∧,,,∧ <br>
-(  ̳• · ̳•) <br>
-/    づ♡ <br>
+  (  ̳• · ̳•) <br>
+  /    づ♡ <br>
 </div>
 
 <!-- Filters -->
 <div class="filter-container">
   <h2>C'est quoi ta toune?</h2>
 
+  <!-- Genres Filter -->
   <div class="filter-group">
     <h3>Genres</h3>
-    <label>
-      <input type="checkbox" name="genre" value="rock"> Rock
-    </label>
-    <label>
-      <input type="checkbox" name="genre" value="pop"> Pop
-    </label>
+    <label><input type="checkbox" name="genre" value="rock"> Rock</label>
+    <label><input type="checkbox" name="genre" value="pop"> Pop</label>
   </div>
 
+  <!-- Difficulty Filter -->
   <div class="filter-group">
     <h3>Difficulté</h3>
-    <label>
-      <input type="checkbox" name="difficulty" value="easy"> Fafa
-    </label>
-    <label>
-      <input type="checkbox" name="difficulty" value="medium"> Ça va
-    </label>
-    <label>
-      <input type="checkbox" name="difficulty" value="hard"> Oufff
-    </label>
+    <label><input type="checkbox" name="difficulty" value="easy"> Fafa</label>
+    <label><input type="checkbox" name="difficulty" value="medium"> Ça va</label>
+    <label><input type="checkbox" name="difficulty" value="hard"> Oufff</label>
   </div>
 
+  <!-- Decade Filter -->
   <div class="filter-group">
     <h3>Décennies</h3>
-    <label>
-      <input type="checkbox" name="decade" value="1940s"> 1940s
-    </label>
-    <label>
-      <input type="checkbox" name="decade" value="1950s"> 1950s
-    </label>
-    <label>
-      <input type="checkbox" name="decade" value="1960s"> 1960s
-    </label>
-    <label>
-      <input type="checkbox" name="decade" value="1970s"> 1970s
-    </label>
-    <label>
-      <input type="checkbox" name="decade" value="1980s"> 1980s
-    </label>
-    <label>
-      <input type="checkbox" name="decade" value="1990s"> 1990s
-    </label>
-    <label>
-      <input type="checkbox" name="decade" value="2000s"> 2000s
-    </label>
-    <label>
-      <input type="checkbox" name="decade" value="2010s"> 2010s
-    </label>
-    <label>
-      <input type="checkbox" name="decade" value="2020s"> 2020s
-    </label>
+    <label><input type="checkbox" name="decade" value="1940s"> 1940s</label>
+    <label><input type="checkbox" name="decade" value="1950s"> 1950s</label>
+    <label><input type="checkbox" name="decade" value="1960s"> 1960s</label>
+    <label><input type="checkbox" name="decade" value="1970s"> 1970s</label>
+    <label><input type="checkbox" name="decade" value="1980s"> 1980s</label>
+    <label><input type="checkbox" name="decade" value="1990s"> 1990s</label>
+    <label><input type="checkbox" name="decade" value="2000s"> 2000s</label>
+    <label><input type="checkbox" name="decade" value="2010s"> 2010s</label>
+    <label><input type="checkbox" name="decade" value="2020s"> 2020s</label>
   </div>
 
+  <!-- Favorites Filter -->
   <div class="filter-group">
     <h3>Les favoris</h3>
-    <label>
-      <input type="checkbox" name="favorites" value="true"> Coups de coeur 
-    </label>
+    <label><input type="checkbox" name="favorites" value="true"> Coups de coeur</label>
   </div>
-  
+
   <button id="apply-filters">Appliquer</button>
 </div>
 
-<!-- Songs Container -->
+<!-- Songs List -->
 <div class="song-container" id="song-list">
-  <!-- Individual song 1 with correct anchor tag for clicking -->
   <div class="song-item">
     <ul>
       <li class="song-link" data-genres="rock" data-difficulties="easy" data-decades="2000s" data-favourites="true">
         <a href="song1.html">Gary Come Home</a>
       </li>
-    </ul> 
+    </ul>
   </div>
 </div>
 
