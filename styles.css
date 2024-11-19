@@ -200,10 +200,11 @@ footer button:hover {
   }
 }
 
+/* Styling for the link */
 a {
-  color: #ff6347;   /* Tomato red for the link color */
+  color: #ff6347;  /* Tomato red for the link color */
   text-decoration: underline; /* Makes it look like a typical clickable link */
-  font-size: 24px;  /* Increase font size (you can adjust this value) */
+  font-size: 30px;  /* Bigger font size for the link */
 }
 
 a:hover {
