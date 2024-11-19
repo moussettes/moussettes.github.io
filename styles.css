@@ -200,12 +200,13 @@ footer button:hover {
   }
 }
 
-a {
-  color: white; /* Tomato red for the link color */
+.song-container a {
+  color: #ff6347; /* Tomato red for the link color */
   text-decoration: underline; /* Optional: makes it look like a typical clickable link */
 }
 
-a:hover {
+.song-container a:hover {
   color: #00ccff;  /* Change color on hover for better UX */
 }
+
 
