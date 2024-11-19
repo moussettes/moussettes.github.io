@@ -10,7 +10,7 @@
 
 <header>
   <h1>Les Boonies</h1>
-  <p>Soirées musicales pour les fans de bière habitant St-Denis</p>
+  <p>Soirées musicales pour les fans de bière habitant la rue St-Denis</p>
 </header>
 
 <!-- ASCII art in the left margin -->
@@ -79,9 +79,9 @@
   </div>
 
   <div class="filter-group">
-    <h3>Coups de coeur</h3>
+    <h3>Les favoris</h3>
     <label>
-      <input type="checkbox" name="favorites" value="true"> Favoris seulement
+      <input type="checkbox" name="favorites" value="true"> Coups de coeur 
     </label>
   </div>
   
@@ -90,14 +90,15 @@
 
 <!-- Songs Container -->
 <div class="song-container" id="song-list">
-  <!-- Individual song 1 -->
+  <!-- Individual song 1 with correct anchor tag for clicking -->
   <div class="song-item">
-      <ul>
-        <li href="song1.html" class="song-link" data-genres="rock" data-difficulties="easy" data-decades="2000s" data-favourites="true">Gary Come Home</li>
-      </ul> 
+    <ul>
+      <li class="song-link" data-genres="rock" data-difficulties="easy" data-decades="2000s" data-favourites="true">
+        <a href="song1.html">Gary Come Home</a>
+      </li>
+    </ul> 
   </div>
 </div>
-  
 
 <script src="script.js"></script>
 </body>
