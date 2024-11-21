@@ -181,12 +181,12 @@ footer button:hover {
   left: 10px; /* Position on the left side */
   transform: translateY(-50%); /* Keep it centered vertically */
   font-size: 32px;
-  color: #ff6347; /* Neon red for ASCII art */
+  color: #ff6347;
   white-space: pre-line;
   padding-left: 20px;
   z-index: 1000;
-  pointer-events: none; /* Prevent interaction block */
-  animation: fade-in 1.5s ease-in-out;
+  /* Ensure it doesn't hide any content */
+  pointer-events: none; /* Prevent it from blocking interactions with other elements */
 }
 
 /* Fade-in Effect for ASCII Art */
@@ -210,19 +210,4 @@ a {
 a:hover {
   color: #00ccff; /* Neon cyan on hover */
 }
-
-/* Song Link Styling (for clickable song links) */
-.song-item a {
-  color: #ff6347; /* Neon red for song links */
-  text-decoration: none;
-  font-size: 22px;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.song-item a:hover {
-  color: #00ccff; /* Neon cyan on hover */
-  text-decoration: underline;
-}
-
 
