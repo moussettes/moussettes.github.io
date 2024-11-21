@@ -177,15 +177,16 @@ footer button:hover {
 /* ASCII Art Styling */
 .ascii-art {
   position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+  top: 50%; /* Position vertically in the center */
+  left: 10px; /* Position on the left side */
+  transform: translateY(-50%); /* Keep it centered vertically */
   font-size: 32px;
-  color: #ff6347; /* Neon red ASCII art */
+  color: #ff6347;
   white-space: pre-line;
   padding-left: 20px;
   z-index: 1000;
-  animation: fade-in 1s ease-out; /* Fade-in animation for a smooth effect */
+  /* Ensure it doesn't hide any content */
+  pointer-events: none; /* Prevent it from blocking interactions with other elements */
 }
 
 /* Fade-in Effect for ASCII Art */
