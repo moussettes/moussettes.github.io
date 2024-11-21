@@ -1,6 +1,6 @@
 /* General Body Styling */
 body {
-  font-family: 'Courier New', Courier, monospace; 
+  font-family: 'Courier New', Courier, monospace;
   background-color: #1e1e1e; /* Dark background for the jazzy feel */
   color: #f4f4f9; /* Light text for contrast */
   margin: 0;
@@ -20,14 +20,13 @@ body {
   left: 10px; /* Position on the left side */
   transform: translateY(-50%); /* Keep it centered vertically */
   font-size: 32px;
-  color: #ff6347;
+  color: #ff6347; /* Neon red for jazz vibe */
   white-space: pre-line;
   padding-left: 20px;
   z-index: 1000;
   /* Ensure it doesn't hide any content */
   pointer-events: none; /* Prevent it from blocking interactions with other elements */
 }
-
 
 /* Header Styling */
 header {
@@ -43,6 +42,7 @@ header h1 {
   margin: 0;
   color: #ff6347; /* Neon orange-red for jazz vibe */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Soft text shadow for glow effect */
+  animation: glitch 1s infinite alternate-reverse; /* Glitch effect */
 }
 
 header p {
@@ -219,10 +219,6 @@ a:hover {
   }
 }
 
-header h1 {
-  animation: glitch 1s infinite alternate-reverse; /* Glitch effect */
-}
-
 /* Optional extra touches for a coding feel */
 
 /* Text area with "code-like" visual style */
@@ -242,5 +238,4 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
-
 
