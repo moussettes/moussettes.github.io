@@ -61,6 +61,7 @@ document.getElementById('apply-filters').addEventListener('click', () => {
 
 // Helper function to get selected values from checkboxes
 function getSelectedValues(name) {
-  return Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(checkbox => checkbox.value);
+  return Array.from(document.querySelectorAll(`input[name="${name}"]:checked`))
+    .map(checkbox => checkbox.value);
 }
 
