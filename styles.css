@@ -240,8 +240,8 @@ code, pre {
 }
 
 pre {
-  padding: 20px;
-  white-space: pre-wrap;
+  /*padding: 20px;*/
+  /*white-space: pre-wrap;*/
   word-wrap: break-word;
 }
 
