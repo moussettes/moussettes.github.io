@@ -234,17 +234,14 @@ a:hover {
 /* Text area with "code-like" visual style */
 code, pre {
   font-family: 'Courier New', monospace;
-  background-color: #282828; /* Dark background for code blocks */
   color: #8ab4f8; /* Light blue text for code */
   padding: 10px;
   border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for code blocks */
   font-size: 1.1em;
 }
 
 pre {
   padding: 20px;
-  overflow-x: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
