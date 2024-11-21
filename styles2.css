@@ -78,6 +78,7 @@ header p {
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon blue shadow */
   text-align: left;
   box-sizing: border-box;
+  text-align: center;
 }
 
 /* Song Container Title Styling */
@@ -88,6 +89,7 @@ header p {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Adding shadow for depth */
+  
 }
 
 /* Chords and Lyrics Styling */
