@@ -15,14 +15,14 @@ body {
 
 /* ASCII Art Styling */
 .ascii-art {
-  /*position: fixed;*/
+  position: fixed;
   top: 50%; /* Position vertically in the center */
   left: 10px; /* Position on the left side */
   /*transform: translateY(-50%); /* Keep it centered vertically */
   font-size: 32px;
   color: #ff6347; /* Neon red for jazz vibe */
   white-space: pre-line;
-  /* padding-left: 20px;*/
+  padding-left: 20px;
   z-index: 1000;
   /* Ensure it doesn't hide any content */
   pointer-events: none; /* Prevent it from blocking interactions with other elements */
