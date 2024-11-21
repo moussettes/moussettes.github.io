@@ -2,7 +2,7 @@
 // Ajouter ici les nouvelles chansons et créer manuellement une nouvelle page html (add file)
 
 const songs = [
-  { title: "Song 1", genres: ["rock", "pop"], difficulties: ["easy"], decades: ["1980s"], favourite: true, page: "song1.html" },
+  { title: "Gary Come Home", genres: ["rock", "pop"], difficulties: ["easy"], decades: ["1980s"], favourite: true, page: "song1.html" },
   { title: "Song 2", genres: ["rock"], difficulties: ["hard"], decades: ["1990s"], favourite: false, page: "song2.html" },
   { title: "Song 3", genres: ["pop"], difficulties: ["easy"], decades: ["2000s"], favourite: true, page: "song3.html" },
   { title: "Song 4", genres: ["rock"], difficulties: ["hard"], decades: ["1970s"], favourite: true, page: "song4.html" },
