@@ -1,8 +1,8 @@
 /* General Body Styling */
 body {
   font-family: 'Courier New', Courier, monospace; 
-  background-color: #1e1e1e; 
-  color: #f4f4f9; 
+  background-color: #1e1e1e; /* Dark background for the jazzy feel */
+  color: #f4f4f9; /* Light text for contrast */
   margin: 0;
   padding: 0 0 80px; /* Space for fixed footer button */
   display: flex;
@@ -20,32 +20,33 @@ body {
   left: 0;
   transform: translateY(-50%);
   font-size: 32px;
-  color: #ff6347; 
-  white-space: pre-line; 
+  color: #ff6347; /* Neon orange-red to match jazz club theme */
+  white-space: pre-line;
   padding-left: 20px;
   z-index: 1000;
 }
 
 /* Header Styling */
 header {
-  background-color: #2c3e50;
-  color: #f4f4f9;
+  background-color: #2c3e50; /* Dark cool background for header */
+  color: #f4f4f9; /* Light text for the header */
   padding: 20px;
   width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
 }
 
 header h1 {
   font-size: 48px;
   margin: 0;
-  color: #ff6347; 
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); 
+  color: #ff6347; /* Neon orange-red for jazz vibe */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Soft text shadow for glow effect */
 }
 
 header p {
   font-size: 20px;
-  color: #9e9e9e;
+  color: #9e9e9e; /* Light gray for subheading text */
   margin: 10px 0 0;
-  font-style: italic;
+  font-style: italic; /* Slightly stylish italic font */
 }
 
 /* Filter Styling */
@@ -53,15 +54,15 @@ header p {
   width: 80%;
   max-width: 900px;
   margin-top: 40px;
-  background-color: #34495e;
+  background-color: #34495e; /* Darker background for filters */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon light border effect */
 }
 
 .filter-container h2 {
   font-size: 28px;
-  color: #ff6347; 
+  color: #ff6347; /* Highlighting filter headers */
   margin-bottom: 15px;
 }
 
@@ -71,24 +72,24 @@ header p {
 
 .filter-group h3 {
   font-size: 20px;
-  color: #f4f4f9;
+  color: #f4f4f9; /* Light color for filter titles */
   margin-bottom: 10px;
 }
 
 .filter-group label {
   display: block;
   font-size: 18px;
-  color: #f4f4f9;
+  color: #f4f4f9; /* Light text for labels */
   margin-bottom: 10px;
 }
 
 .filter-group input[type="checkbox"] {
   margin-right: 10px;
-  accent-color: #ff6347; 
+  accent-color: #ff6347; /* Neon red accent for checkboxes */
 }
 
 #apply-filters {
-  background-color: #00ccff;
+  background-color: #00ccff; /* Neon cyan for the filter button */
   color: white;
   font-size: 18px;
   padding: 10px 20px;
@@ -100,8 +101,8 @@ header p {
 }
 
 #apply-filters:hover {
-  background-color: #00ffcc;
-  box-shadow: 0 0 20px #00ffcc;
+  background-color: #00ffcc; /* Lighter cyan on hover */
+  box-shadow: 0 0 20px #00ffcc; /* Glowing effect on hover */
 }
 
 /* Song Container Styling */
@@ -110,9 +111,9 @@ header p {
   max-width: 900px;
   margin-top: 40px;
   padding: 20px;
-  background-color: #2c3e50;
+  background-color: #2c3e50; /* Dark background for song container */
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon border glow effect */
   text-align: left;
   margin-bottom: 80px;
 }
@@ -133,7 +134,7 @@ footer {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #2c3e50;
+  background-color: #2c3e50; /* Dark footer to match the rest */
   padding: 10px 0;
   width: 100%;
   text-align: center;
@@ -141,7 +142,7 @@ footer {
 }
 
 footer button {
-  background-color: #00ccff;
+  background-color: #00ccff; /* Neon cyan for footer button */
   color: white;
   font-size: 18px;
   padding: 10px 20px;
@@ -154,8 +155,8 @@ footer button {
 }
 
 footer button:hover {
-  background-color: #00ffcc;
-  box-shadow: 0 0 20px #00ffcc;
+  background-color: #00ffcc; /* Lighter cyan on hover */
+  box-shadow: 0 0 20px #00ffcc; /* Glowing neon effect */
 }
 
 /* Responsive Design */
@@ -193,13 +194,50 @@ footer button:hover {
 
 /* Link Styling */
 a {
-  color: #ff6347; 
+  color: #ff6347; /* Neon red for links */
   text-decoration: underline;
   font-size: 30px;
 }
 
 a:hover {
-  color: #00ccff; 
+  color: #00ccff; /* Neon cyan on hover for links */
+}
+
+/* Animation for glitchy title */
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 2px 0 #ff6347, -2px -2px 0 #00ccff;
+  }
+  50% {
+    text-shadow: -2px -2px 0 #ff6347, 2px 2px 0 #00ccff;
+  }
+  100% {
+    text-shadow: 2px 2px 0 #ff6347, -2px -2px 0 #00ccff;
+  }
+}
+
+header h1 {
+  animation: glitch 1s infinite alternate-reverse; /* Glitch effect */
+}
+
+/* Optional extra touches for a coding feel */
+
+/* Text area with "code-like" visual style */
+code, pre {
+  font-family: 'Courier New', monospace;
+  background-color: #282828; /* Dark background for code blocks */
+  color: #8ab4f8; /* Light blue text for code */
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for code blocks */
+  font-size: 1.1em;
+}
+
+pre {
+  padding: 20px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 
