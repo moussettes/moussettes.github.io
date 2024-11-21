@@ -1,8 +1,8 @@
 /* General Body Styling */
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #1e1e1e;
-  color: #f4f4f9;
+  background-color: #1e1e1e; /* Dark background for the jazz-club vibe */
+  color: #f4f4f9; /* Light text for contrast */
   margin: 0;
   padding: 0 0 80px; /* Padding at the bottom to avoid overlap with fixed footer */
   display: flex;
@@ -15,22 +15,54 @@ body {
 
 /* Header Styling */
 header {
-  background-color: #2c3e50;
-  color: #f4f4f9;
+  background-color: #2c3e50; /* Dark background for the header */
+  color: #f4f4f9; /* Light text color */
   padding: 20px;
   width: 100%;
 }
 
+/* Glitch Effect on the Header Title */
 header h1 {
   font-size: 48px;
   margin: 0;
-  color: #ff6347;
+  color: #ff6347; /* A warm red for a neon look */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  position: relative;
+  display: inline-block;
+  animation: glitch 1s infinite linear alternate-reverse;
+}
+
+/* Glitch Effect Keyframes */
+@keyframes glitch {
+  0% {
+    text-shadow: 1px 1px 2px #ff6347, -1px -1px 2px #ff6347;
+    transform: translate(1px, 1px);
+  }
+  20% {
+    text-shadow: 1px 1px 2px #ff6347, -1px -1px 2px #ff6347;
+    transform: translate(-2px, -2px);
+  }
+  40% {
+    text-shadow: 1px 1px 2px #ff6347, -1px -1px 2px #ff6347;
+    transform: translate(3px, 3px);
+  }
+  60% {
+    text-shadow: 1px 1px 2px #ff6347, -1px -1px 2px #ff6347;
+    transform: translate(-4px, -4px);
+  }
+  80% {
+    text-shadow: 1px 1px 2px #ff6347, -1px -1px 2px #ff6347;
+    transform: translate(5px, 5px);
+  }
+  100% {
+    text-shadow: 1px 1px 2px #ff6347, -1px -1px 2px #ff6347;
+    transform: translate(0px, 0px);
+  }
 }
 
 header p {
   font-size: 20px;
-  color: #9e9e9e;
+  color: #9e9e9e; /* Light gray for subtitle */
   margin-top: 10px;
   font-style: italic;
 }
@@ -41,35 +73,41 @@ header p {
   max-width: 900px;
   margin-top: 40px;
   padding: 20px;
-  background-color: #2c3e50;
+  background-color: #2c3e50; /* Dark background for the song container */
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon blue shadow */
   text-align: left;
   box-sizing: border-box;
 }
 
+/* Song Container Title Styling */
 .song-container h2 {
   font-size: 28px;
-  color: #ff6347;
+  color: #ff6347; /* Neon red for song section title */
   margin-top: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Adding shadow for depth */
 }
 
 /* Chords and Lyrics Styling */
 .chords-lyrics {
   font-size: 20px;
-  color: #f4f4f9;
+  color: #f4f4f9; /* Light text color */
   line-height: 1.6;
   white-space: pre-wrap;
   font-family: 'Courier New', monospace;
   margin-top: 10px;
 }
 
+/* Chords and Lyrics Preformatted Styling */
 .chords-lyrics pre {
   margin: 0;
   font-size: 22px;
-  color: #f39c12;
+  color: #f39c12; /* Neon yellow for chords */
+  background-color: rgba(0, 0, 0, 0.3); /* Dark background behind chords for contrast */
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /* Footer Section - Fixed Button Styling */
@@ -78,27 +116,28 @@ footer {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #2c3e50;
+  background-color: #2c3e50; /* Dark footer */
   padding: 10px 0;
   width: 100%;
   text-align: center;
 }
 
+/* Neon Button Styling */
 footer button {
-  background-color: #00ccff;
+  background-color: #00ccff; /* Neon cyan for buttons */
   color: white;
   font-size: 18px;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 10px #00ccff;
+  box-shadow: 0 0 10px #00ccff; /* Neon cyan glow effect */
   transition: 0.3s ease-in-out;
 }
 
 footer button:hover {
-  background-color: #00ffcc;
-  box-shadow: 0 0 20px #00ffcc;
+  background-color: #00ffcc; /* Lighter cyan on hover */
+  box-shadow: 0 0 20px #00ffcc; /* Larger neon glow on hover */
 }
 
 /* Responsive Design */
@@ -134,4 +173,41 @@ footer button:hover {
     padding: 8px 16px;
   }
 }
+
+/* ASCII Art Styling */
+.ascii-art {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 32px;
+  color: #ff6347; /* Neon red ASCII art */
+  white-space: pre-line;
+  padding-left: 20px;
+  z-index: 1000;
+  animation: fade-in 1s ease-out; /* Fade-in animation for a smooth effect */
+}
+
+/* Fade-in Effect for ASCII Art */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Link Styling */
+a {
+  color: #ff6347; /* Neon red */
+  text-decoration: underline;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00ccff; /* Neon cyan on hover */
+}
+
 
