@@ -66,7 +66,6 @@ header p {
   margin-right: auto; /* Center the container horizontally */
 }
 
-
 .filter-container h2 {
   font-size: 28px;
   color: #ff6347; /* Highlighting filter headers */
@@ -242,4 +241,5 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
 
