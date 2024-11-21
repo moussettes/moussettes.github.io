@@ -16,12 +16,12 @@ body {
 /* ASCII Art Styling */
 .ascii-art {
   position: fixed;
-  top: 50%; /* Position vertically in the center */
+  /*top: 50%; /* Position vertically in the center */
   left: 10px; /* Position on the left side */
-  font-size: 32px;
+  font-size: 35px;
   color: #ff6347; /* Neon red for jazz vibe */
   white-space: pre-line;
-  padding-left: 20px;
+  /*padding-left: 20px;*/
   z-index: 1000;
   pointer-events: none; /* Prevent it from blocking interactions with other elements */
 }
