@@ -52,7 +52,7 @@ header p {
   font-style: italic; /* Slightly stylish italic font */
 }
 
-/* Filter Styling */
+/* Filter Container Styling */
 .filter-container {
   width: 80%;
   max-width: 900px;
@@ -61,7 +61,11 @@ header p {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon light border effect */
+  text-align: left; /* Align text and filter items to the left */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto; /* Center the container horizontally */
 }
+
 
 .filter-container h2 {
   font-size: 28px;
