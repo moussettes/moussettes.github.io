@@ -1,4 +1,6 @@
 // Sample song data (normally fetched from an API or external data source)
+// Ajouter ici les nouvelles chansons et créer manuellement une nouvelle page html (add file)
+
 const songs = [
   { title: "Song 1", genres: ["rock", "pop"], difficulties: ["easy"], decades: ["1980s"], favourite: true, page: "song1.html" },
   { title: "Song 2", genres: ["rock"], difficulties: ["hard"], decades: ["1990s"], favourite: false, page: "song2.html" },
