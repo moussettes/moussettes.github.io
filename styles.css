@@ -24,7 +24,6 @@ body {
   white-space: pre-line;
   padding-left: 20px;
   z-index: 1000;
-  /* Ensure it doesn't hide any content */
   pointer-events: none; /* Prevent it from blocking interactions with other elements */
 }
 
@@ -122,6 +121,30 @@ header p {
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon border glow effect */
   text-align: left;
   margin-bottom: 80px;
+}
+
+.song-container .song-item {
+  background-color: #34495e;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.song-container .song-item:hover {
+  background-color: #3a5577; /* Slight hover effect */
+}
+
+.song-container .song-item a {
+  color: #ff6347; /* Neon red for song links */
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.song-container .song-item a:hover {
+  color: #00ccff; /* Neon cyan on hover for links */
+  text-decoration: underline;
 }
 
 .song-container ul {
