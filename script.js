@@ -1,10 +1,10 @@
 // Sample song data (normally fetched from an API or external data source)
 const songs = [
-  { title: "Song 1", genres: ["rock", "pop"], difficulties: ["easy"], decades: ["1980s"], favourite: true },
-  { title: "Song 2", genres: ["rock"], difficulties: ["hard"], decades: ["1990s"], favourite: false },
-  { title: "Song 3", genres: ["pop"], difficulties: ["easy"], decades: ["2000s"], favourite: true },
-  { title: "Song 4", genres: ["rock"], difficulties: ["hard"], decades: ["1970s"], favourite: true },
-  { title: "Song 5", genres: ["pop"], difficulties: ["easy"], decades: ["2010s"], favourite: false },
+  { title: "Song 1", genres: ["rock", "pop"], difficulties: ["easy"], decades: ["1980s"], favourite: true, page: "song1.html" },
+  { title: "Song 2", genres: ["rock"], difficulties: ["hard"], decades: ["1990s"], favourite: false, page: "song2.html" },
+  { title: "Song 3", genres: ["pop"], difficulties: ["easy"], decades: ["2000s"], favourite: true, page: "song3.html" },
+  { title: "Song 4", genres: ["rock"], difficulties: ["hard"], decades: ["1970s"], favourite: true, page: "song4.html" },
+  { title: "Song 5", genres: ["pop"], difficulties: ["easy"], decades: ["2010s"], favourite: false, page: "song5.html" },
   // Add more songs as needed
 ];
 
@@ -18,7 +18,7 @@ songs.forEach(song => {
 
   // Create the song link element with dynamic data attributes
   songElement.innerHTML = `
-    <a href="#" class="song" 
+    <a href="${song.page}" class="song" 
        data-genres="${song.genres.join(', ')}" 
        data-difficulties="${song.difficulties.join(', ')}" 
        data-decades="${song.decades.join(', ')}" 
