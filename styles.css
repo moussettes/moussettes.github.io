@@ -18,13 +18,11 @@ body {
   position: fixed;
   top: 50%; /* Position vertically in the center */
   left: 10px; /* Position on the left side */
-  /*transform: translateY(-50%); /* Keep it centered vertically */
   font-size: 32px;
   color: #ff6347; /* Neon red for jazz vibe */
   white-space: pre-line;
   padding-left: 20px;
   z-index: 1000;
-  /* Ensure it doesn't hide any content */
   pointer-events: none; /* Prevent it from blocking interactions with other elements */
 }
 
@@ -68,18 +66,19 @@ header p {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon light border effect */
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center the filter groups horizontally */
+  gap: 40px; /* Add space between the filter groups */
   text-align: left; /* Align text and filter items to the left */
   margin-left: auto; /* Center the container horizontally */
   margin-right: auto; /* Center the container horizontally */
 }
 
-.filter-container h2 {
-  font-size: 28px;
-  color: #ff6347; /* Highlighting filter headers */
-  margin-bottom: 15px;
-}
-
+/* Ensure each filter group stays in a column */
 .filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start of each column */
   margin-bottom: 20px;
 }
 
@@ -132,7 +131,7 @@ header p {
 }
 
 .song-container ul {
-  list-style-type: none; 
+  list-style-type: none;
   padding-left: 0;
   margin: 0;
 }
@@ -169,7 +168,7 @@ footer button {
 
 footer button:hover {
   background-color: #00ffcc; /* Lighter cyan on hover */
-  box-shadow: 0 0 20px #00ffcc; /* Glowing neon effect */
+  box-shadow: 0 0 20px #00ccff; /* Glowing neon effect */
 }
 
 /* Responsive Design */
@@ -245,4 +244,5 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
 
